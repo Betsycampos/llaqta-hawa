@@ -1,6 +1,15 @@
+.fuente-solano {
+  font-family: 'sgothic-bdcap';
+}
+
+.space-tb {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
 .bg-llaqta {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../src/images/desktop.jpg');
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/images/desktop.jpg');
   width: 100%;
   min-height: 850px;
   background-size: cover;
@@ -11,15 +20,37 @@
   .position-nav {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.418) !important;
+    background: rgba(0, 0, 0, 0.603) !important;
+    height: 13%;
   }
+
+  .height--25 {
+    height: 25px;
+  }
+
+  .height--100 {
+    height: 100px;
+  }
+
+  .linea-space {
+    line-height: 1 !important;
+  }
+
+  .size-25 {
+    font-size: 25px !important;
+  }
+
+  .size-45 {
+    font-size: 45px !important;
+  }
+
+  
 
 
 @media (min-width:768px){
 
   .bg-llaqta {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../src/images/desktop.jpg');
-    background-attachment: fixed;   
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/images/desktop.jpg');
     min-height: 700px;
     height: 100vh;
     background-size: cover;
