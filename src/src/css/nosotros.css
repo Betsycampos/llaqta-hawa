@@ -1,0 +1,15 @@
+.centered-nosotros {
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #menuToggle input:checked~ul {
+        right: -5.29rem;
+    }
+}

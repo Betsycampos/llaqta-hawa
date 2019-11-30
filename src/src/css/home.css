@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 0.94vw;
+}
+
+main {
+    background-image: url(../../assets/fondo-home.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium_O';
+    src: local('FUENTES/Gotham-Medium_O.otf'), url('FUENTES/Gotham-Medium_O.otf') format('opentype');
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.iconH {
+    font-size: 2rem;
+}
+
+.white-font {
+    color: white;
+}
+
+.menu-brg {
+    width: 3rem;
+}
+
+.logo {
+    height: 100%;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin: 1.5rem 0 2rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cat-title {
+    padding: .5rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .container-icons {
+        margin-left: 63rem;
+        width: 37rem;
+    }
+    .iconH {
+        font-size: 5rem;
+    }
+}

@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: .98vw;
+}
+
+main {
+    background: linear-gradient( rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.52)), url(../../assets/_B9A0994.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.vw40 {
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    top: 50%;
+    /* transform: translateY(0%); */
+    background: linear-gradient( rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.42));
+    background-position-x: center;
+    z-index: 1;
+}
+
+.logo {
+    z-index: 20;
+}
+
+.container-white {
+    z-index: 100;
+}
+
+.three-border-w {
+    border: white 1px solid;
+    font-size: 1rem;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrowWhite {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.al-ite {
+    align-items: center;
+}
+
+.arrowWhite1 {
+    width: 1.9rem;
+    height: 1.4rem;
+}
+
+.center {
+    align-items: center;
+}
+
+.container-white {
+    margin-top: 2rem;
+}
+
+.cat-title {
+    padding-right: 0rem;
+}
+
+p {
+    margin-bottom: .5rem !important;
+}
+
+.title {
+    margin: 1.5rem 0 .5rem;
+}
+
+.line-h {
+    line-height: 1;
+}
+
+.l-s-0 {
+    letter-spacing: 0px;
+}
+
+.title2 {
+    margin: 1.3rem 0 1.3rem 3rem!important;
+}
+
+.vw60 {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.vaca-img {
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+#menuToggle input:checked~ul {
+    right: -1.97rem;
+}
+
+@media (max-width: 768px) {
+    #menuToggle input:checked~ul {
+        right: -3.3rem;
+    }
+    .center {
+        align-items: center;
+        justify-content: center;
+    }
+    .column-d {
+        flex-direction: column;
+    }
+    .vw40 {
+        width: 100%;
+        height: auto;
+        position: inherit;
+        top: 0;
+        z-index: auto;
+    }
+    .w-80 {
+        width: 100%;
+        padding: 4rem;
+    }
+    .vaca-img {
+        width: 50%;
+        position: inherit;
+        top: 00%;
+        transform: translate(50%, 0%);
+    }
+    .container-white {
+        margin-top: 8rem;
+    }
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sz-2 {
+        font-size: 2rem;
+    }
+    .arrowWhite {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .flex-end {
+        align-items: center
+    }
+    .arrowWhite1 {
+        display: none;
+    }
+}
