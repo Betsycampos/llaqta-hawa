@@ -1,0 +1,273 @@
+/* .vh20 {
+    height: 11vh;
+} */
+
+.border-white-btn {
+    position: relative;
+    left: -3rem;
+    top: .3rem;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    padding: 2% 13.5%;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    height: 60%;
+    width: 19rem;
+}
+
+.white-font {
+    color: white;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer {
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+
+.iconH {
+    font-size: 2rem;
+}
+
+
+/* @font-face {
+    font-family: 'Gotham-Thin';
+    src: local('FUENTES/Gotham-Thin.otf'), url('FUENTES/Gotham-Thin.otf') format('opentype');
+} */
+
+.container-icons {
+    display: flex;
+    width: 15rem;
+    justify-content: space-between;
+}
+
+
+/*
+ * Just a quick hamburger
+ */
+
+#menuToggle span {
+    display: block;
+    width: 3rem;
+    height: 0.4rem;
+    margin-bottom: 0.4rem;
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 1;
+    /* transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); */
+    opacity: 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+/* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0rem, .8rem);
+    background: #fff;
+    z-index: 2;
+}
+
+
+/*
+  * But let's hide the middle one.
+  */
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+/*
+  * Ohyeah and the last one should go the other direction
+  */
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -.1rem);
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    top: .5rem;
+}
+
+#menuToggle input {
+    display: block;
+    width: 4rem;
+    height: 5rem;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+
+/*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+
+#menu {
+    position: absolute;
+    z-index: 1;
+    margin: -5.5rem 0 0 -14.4rem;
+    padding: 5rem;
+    padding-top: 15rem;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* transform-origin: 0% 0%;
+    transform: translate(0%, 0);
+    transition: transform 0.5s cubic-bezier(0.7, 0.7, 0.5, 1.0); */
+    font-size: 0px;
+    top: 2rem;
+    height: 100vh;
+}
+
+#menu li {
+    /* font-family: 'Gotham-Medium_O'; */
+    text-align: right;
+    padding: 1.5rem 3rem;
+    display: none;
+}
+
+#menuToggle input:checked~#menu li {
+    display: block;
+}
+
+.logo-nav {
+    background-image: url("../../assets/logo-mafrox.svg");
+    height: 2rem;
+    display: none;
+}
+
+
+/*
+  * And let's slide it in from the left
+  */
+
+#menuToggle input:checked~ul {
+    transform: none;
+    /* z-index: 100; */
+    display: block;
+    /* height: 101.5vh; */
+    right: -3.39rem;
+    width: 33rem;
+    font-size: 1.5rem;
+    background: #000000e3;
+    top: 3rem;
+}
+
+#menuToggle input:checked~ul .logo-nav {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+
+.contmenu-btn {
+    position: absolute;
+    right: -100rem;
+    top: 2rem;
+    display: flex;
+    /* width: 34rem;
+    justify-content: space-around; */
+    /* align-items: flex-end; */
+    /* padding-top: 1%; */
+    /* padding-left: 1%; */
+    /* padding-right: 2%;*/
+}
+
+.menu-none {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #menuToggle span {
+        top: 1.1rem;
+    }
+    .contmenu-btn {
+        width: 50rem;
+    }
+    #menuToggle span {
+        display: block;
+        width: 11rem;
+        height: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #menuToggle input {
+        display: block;
+        width: 10rem;
+        height: 11.5rem;
+        position: absolute;
+        top: -1.9rem;
+    }
+    #menuToggle span {
+        display: block;
+        width: 9rem;
+        height: 1rem;
+    }
+    .border-white-btn {
+        width: 32rem;
+        height: 6rem;
+        font-size: 2rem;
+        position: relative;
+        top: -1rem;
+        margin-right: 7rem;
+        margin-top: 2rem;
+    }
+    .logo {
+        margin-top: 0rem;
+        margin-left: 1.1rem;
+        height: 11rem;
+    }
+    #menuToggle input:checked~ul {
+        height: 120rem;
+        position: absolute;
+        right: -2.9rem;
+        width: 106.8rem;
+        top: -3rem;
+    }
+    #menu li {
+        text-align: center;
+        padding: 6.2rem 2rem;
+        font-size: 4.4rem;
+    }
+    #menuToggle input:checked~ul .logo-nav {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 768px) {}
