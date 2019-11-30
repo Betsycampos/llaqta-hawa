@@ -1,0 +1,34 @@
+.fuente-solano {
+  font-family: 'sgothic-bdcap';
+}
+
+.home-llaqta {
+  background: url('/src/img/desktop.jpg');
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 850px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+
+.p-nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.199) !important;
+}
+
+  @media (min-width:768px){
+
+  .home-llaqta {
+    background: url('/src/img/desktop.jpg');
+    background-attachment: fixed;
+    min-height: 200px;
+    height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    }
+
+      
+  }
