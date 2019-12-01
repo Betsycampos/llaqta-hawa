@@ -48,32 +48,32 @@ const coordenadast = [{
 
 
 var marker = {};
+var foo = (coordenadas) => {};
 var miMapa = L.map('mapa').setView([-12.099803, -77.008990], 15);
-var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-var osm = new L.TileLayer(osmUrl, {
-    minZoom: 5,
-    maxZoom: 16,
-    attribution: osmAttrib
-});
-osm.addTo(miMapa);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Rubén Alcaraz. Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 20,
+    id: 'mapbox.comic',
+    accessToken: 'pk.eyJ1IjoicmFsY2FyYXoiLCJhIjoiY2prNmRxcmh1MXNqODNya2NocWY5azEweCJ9.4Qf2Wgh-d1e_ujcRkvq0MA'
+}).addTo(miMapa);
 let estiloPopup = {
     'maxWidth': '300'
 }
 
 var iconoBase = L.Icon.extend({ options: { iconSize: [24, 39], iconAnchor: [16, 87], popupAnchor: [-3, -76] } });
-var iconoReciclaje = new iconoBase({
+var iconoTurismo = new iconoBase({
     iconUrl: 'peruvian.png'
 });
 
 
-var polygonPoints = [
-    [-12.125260, -76.994037],
-    [-12.122752, -76.994037],
-    [-12.129759, -76.994037],
 
-];
-var poly = L.polygon(polygonPoints).addTo(miMapa);
+for (const longitudYlatitud of coordenadast) {
+    var marker = L.marker([longitudYlatitud.longitud, longitudYlatitud.latitud], {
+        icon: iconoTurismo
+    }).addTo(miMapa);
+    marker.bindPopup(`<h1>${longitudYlatitud.titulo}</h1><img class="imageMap"src='eco.jpg' alt='Turismo'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
+    var popup = L.popup();
+}
 
 const arrayOfOptions = [];
 
@@ -206,8 +206,6 @@ const day2 = document.getElementById("day2");
 const day3 = document.getElementById("day3");
 
 const day4 = document.getElementById("day4");
-
-
 
 const bird = document.getElementById("o16");
 
