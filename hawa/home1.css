@@ -270,7 +270,7 @@ nav {
     }
     .btn-pago:hover,
     .btn-pago:active {
-        transform: scale(1.5);
+        transform: scale(1);
         color: #d3d0d0 !important;
         text-decoration: none;
     }
