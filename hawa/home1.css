@@ -163,9 +163,20 @@ nav {
 }
 
 .btn-form {
-  padding: 10px 100px;
+  padding: 10px 10px;
   background-color: #f17442;
 }
+.goodbye-message {
+  background: rgb(270, 270, 270, 0.6);
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  left: 5%;
+}
+
+
+
+
 
 @media (min-width:768px) {
     .bg-llaqta {
@@ -181,5 +192,24 @@ nav {
     }
     .linea-space2 {
         top: -30%;
+    }
+    .btn-form {
+      padding: 10px 100px;
+      background-color: #f17442;
+    }
+
+    .goodbye-message {
+      top: 15%;
+      right: 10%;
+      left: 40%;
+    }
+    
+    .goodbye-message {
+      top: 20%;
+      left: 50%;
+    }
+
+    .goodbye-message {
+      left: 60%;
     }
 }
