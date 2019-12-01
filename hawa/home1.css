@@ -174,9 +174,17 @@ nav {
   right: 5%;
   left: 5%;
 }
+.goodbye-messages {
+  background: rgb(270, 270, 270, 0.6);
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  left: 5%;
+}
 
-
-
+.text-nosotros {
+  color: #f17442;
+}
 
 
 @media (min-width:768px) {
@@ -212,5 +220,20 @@ nav {
 
     .goodbye-message {
       left: 60%;
+    }
+
+    .goodbye-messages {
+      top: 15%;
+      right: 10%;
+      left: 30%;
+    }
+    
+    .goodbye-messages {
+      top: 20%;
+      left: 30%;
+    }
+
+    .goodbye-messages {
+      left: 10%;
     }
 }

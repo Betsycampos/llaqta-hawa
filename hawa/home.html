@@ -2,182 +2,180 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LLAQTA HAWA</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LLAQTA HAWA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="home1.css">
-    <link rel="stylesheet" href="mapa.css">
-    <link rel="shortcut icon" href="../hawa/images/logo.png" type="image/png">
-    <script src="https://kit.fontawesome.com/026799b381.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="home1.css">
+  <link rel="stylesheet" href="mapa.css">
+  <link rel="shortcut icon" href="../hawa/images/logo.png" type="image/png">
+  <script src="https://kit.fontawesome.com/026799b381.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark position-nav">
-        <a class="navbar-brand" href="#">
-            <img src="../hawa/images/HAWA-calado.png" width="100" height="90" class="d-inline-block align-top pt-3 pb-3" alt="">
-
-        </a>
-
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark position-nav">
+    <a class="navbar-brand" href="#">
+      <img src="../hawa/images/HAWA-calado.png" width="100" height="90" class="d-inline-block align-top pt-3 pb-3" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars color-menu"></i>
-
     </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link text-white bold" href="#">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white bold" href="#">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white bold" href="#">EXPERIENCIAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white bold" href="#">TESTIMONIOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white bold" href="#">CONTACTO</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-white bold" href="../hawa/home.html">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bold" href="../hawa/nosotros.html">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bold" href="#experiencias-unicas">EXPERIENCIAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bold" href="#">TESTIMONIOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white bold" href="#">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="bg-llaqta">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="height--100"></div>
-                    <div class="height--100"></div>
-                    <div class="height--100 d-none d-sm-block"></div>
-                    <h2 class="fuente-solano text-white size-45">Hola bienvenido a HAWA</h2>
-                    <p class="text-white linea-space m-0 size-25">Te ayudamos a ubicar la experiencia</p>
-                    <p class="text-white linea-space size-25">que más se ajuste a tus planes de viaje.</p>
-                    <div class="height--25"></div>
-                    <a href="#" class="btn-empezar fuente-solano bold">EMPEZAR</a>
-                </div>
-            </div>
+  <section class="bg-llaqta">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="height--100"></div>
+          <div class="height--100"></div>
+          <div class="height--100 d-none d-sm-block"></div>
+          <h2 class="fuente-solano text-white size-45">Hola bienvenido a HAWA</h2>
+          <p class="text-white linea-space m-0 size-25">Te ayudamos a ubicar la experiencia</p>
+          <p class="text-white linea-space size-25">que más se ajuste a tus planes de viaje.</p>
+          <div class="height--25"></div>
+          <a href="#" class="btn-empezar fuente-solano bold">EMPEZAR</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="space-tb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="fuente-solano1 bold">EXPERIENCIAS DESTACADAS</h3>
-                    <div class="height--25"></div>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/b.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/b.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-
-            <div class="row pt-3">
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="image-wrapper">
-                        <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
-                    </div>
-                    <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
+  <section class="space-tb" id="experiencias-unicas">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="fuente-solano1 bold">EXPERIENCIAS DESTACADAS</h3>
+          <div class="height--25"></div>
         </div>
-    </section>
-
-    <section class="space-tb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="fuente-solano1 bold">¿QUÉ TIPO DE EXPERIENCIA TE INTERESA MÁS?</h4>
-                    <div class="height--25"></div>
-                </div>
-                <div class="col-md-3 text-center" id="i1">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-mistico">
-                            <img class="w-100 height-image" src="../hawa/images/i1.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">VIVENCIAL</p>
-                </div>
-                <div class="col-md-3 text-center" id="i2">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-mistico">
-                            <img class="w-100 height-image" src="../hawa/images/i2.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">MÍSTICO</p>
-                </div>
-                <div class="col-md-3 text-center" id="i3">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion">
-                            <img class="w-100 height-image" src="../hawa/images/i3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">INVESTIGACIÓN</p>
-                </div>
-                <div class="col-md-3 text-center" id="i4">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-naturaleza">
-                            <img class="w-100 height-image" src="../hawa/images/i4.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">NATURALEZA</p>
-                </div>
-            </div>
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-    </section>
-    <section class="Dnone" id="twoDiv">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="fuente-solano1 bold">¿A QUÉ QUIERES QUE ESTÉ MÁS ORIENTADA LA EXPERIENCIA?</h4>
-                    <div class="height--25"></div>
-                </div>
-                <!--     <div class="col-md-3 text-center" id="o1">
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/b.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/b.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="row pt-3">
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <div class="image-wrapper">
+            <img class="w-100 height-image" src="../hawa/images/a.jpg" alt="">
+          </div>
+          <p class="pt-3 text-grey-bold bold linea-space">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="space-tb">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="fuente-solano1 bold">¿QUÉ TIPO DE EXPERIENCIA TE INTERESA MÁS?</h4>
+          <div class="height--25"></div>
+        </div>
+        <div class="col-md-3 text-center" id="i1">
+          <a class="de-bo">
+            <div class="image-wrapper img-mistico">
+              <img class="w-100 height-image" src="../hawa/images/i1.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">VIVENCIAL</p>
+        </div>
+        <div class="col-md-3 text-center" id="i2">
+          <a class="de-bo">
+            <div class="image-wrapper img-mistico">
+              <img class="w-100 height-image" src="../hawa/images/i2.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">MÍSTICO</p>
+        </div>
+        <div class="col-md-3 text-center" id="i3">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion">
+              <img class="w-100 height-image" src="../hawa/images/i3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">INVESTIGACIÓN</p>
+        </div>
+        <div class="col-md-3 text-center" id="i4">
+          <a class="de-bo">
+            <div class="image-wrapper img-naturaleza">
+              <img class="w-100 height-image" src="../hawa/images/i4.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">NATURALEZA</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="Dnone" id="twoDiv">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="fuente-solano1 bold">¿A QUÉ QUIERES QUE ESTÉ MÁS ORIENTADA LA EXPERIENCIA?</h4>
+          <div class="height--25"></div>
+        </div>
+        <!--     <div class="col-md-3 text-center" id="o1">
                       <a class="de-bo">
                           <div class="image-wrapper img-mistico">
                               <img class="w-100 height-image" src="/hawa/images/o1.jpg" alt="">
@@ -185,7 +183,7 @@
                       </a>
                       <p class="pt-3 text-grey-bold bold linea-space linea-space2">FOTOGRAFÍA</p>
                   </div> -->
-                <!-- <div class="col-md-3 text-center" id="o2">
+        <!-- <div class="col-md-3 text-center" id="o2">
                       <a class="de-bo">
                           <div class="image-wrapper img-mistico">
                               <img class="w-100 height-image" src="/hawa/images/o2.jpg" alt="">
@@ -194,241 +192,244 @@
                       <p class="pt-3 text-grey-bold bold linea-space linea-space2">TEXTIL</p>
                   </div> -->
 
-                <div class="col-md-3 text-center vivencial Dnone todos1 " id="o1">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">GANADERIA</p>
-                </div>
-
-                <div class="col-md-3 text-center vivencial Dnone todos1" id="o2">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-naturaleza ">
-                            <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">GASTRONOMÍA</p>
-                </div>
-
-                <div class="col-md-3 text-center vivencial Dnone todos1" id="o3">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">PESCA</p>
-                </div>
-
-                <div class="col-md-3 text-center vivencial Dnone todos1" id="o4">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">CAFE</p>
-                </div>
-
-                <div class="col-md-3 text-center vivencial Dnone todos1" id="o5">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">AGRICULTURA</p>
-                </div>
-
-
-
-
-                <div class="col-md-3 text-center mistico Dnone sanpedro " id="o6">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">PAGO A LA TIERRA</p>
-                </div>
-
-                <div class="col-md-3 text-center mistico Dnone sanpedro" id="o7">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-naturaleza ">
-                            <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">CHAKU</p>
-                </div>
-
-                <div class="col-md-3 text-center mistico Dnone sanpedro" id="o8">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">TINKACHI</p>
-                </div>
-
-                <div class="col-md-3 text-center mistico Dnone sanpedro" id="o9">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">FESTIVIDADES </p>
-                </div>
-
-                <div class="col-md-3 text-center mistico Dnone sanpedro" id="o10">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">DEMOSTRACION DE RITUALES</p>
-                </div>
-
-
-
-
-                <div class="col-md-3 text-center investigacion Dnone todos1" id="o11">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion todos1">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">HISTORIA</p>
-                </div>
-
-                <div class="col-md-3 text-center investigacion Dnone todos1" id="o12">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-naturaleza ">
-                            <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">ARQUITECTURA</p>
-                </div>
-
-                <div class="col-md-3 text-center investigacion Dnone todos1" id="o13">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">INGENIERIA</p>
-                </div>
-
-                <div class="col-md-3 text-center investigacion Dnone todos1" id="o14">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">ARTE </p>
-                </div>
-
-                <div class="col-md-3 text-center investigacion Dnone todos1" id="o15">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">RELIGION</p>
-                </div>
-
-
-
-
-                <div class="col-md-3 text-center naturaleza Dnone todos1" id="o16">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">BIRD WATCHING</p>
-                </div>
-
-                <div class="col-md-3 text-center naturaleza Dnone todos1" id="o17">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-naturaleza ">
-                            <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">AVISTAMIENTO DE FLORA Y FAUNA</p>
-                </div>
-
-                <div class="col-md-3 text-center naturaleza Dnone todos1" id="o18">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion ">
-                            <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2">TREKKING</p>
-                </div>
-
-
+        <div class="col-md-3 text-center vivencial Dnone todos1 " id="o1">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
             </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">GANADERIA</p>
         </div>
-    </section>
 
-    <section class="Dnone" id="threeDiv">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="fuente-solano1 bold">¿CUÁNTOS DÍAS TE GUSTARÍA QUEDARTE EN EL LUGAR?</h4>
-                    <div class="height--25"></div>
-                </div>
-                <div class="col-md-3 text-center days Dnone ayahuasca" id="day1">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-mistico ">
-                            <img class="w-100 height-image" src="../hawa/images/day1.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">1 DÍA</p>
-                </div>
-                <div class="col-md-3 text-center days Dnone ayahuasca" id="day2">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-mistico">
-                            <img class="w-100 height-image" src="../hawa/images/day3.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">2 DÍAS</p>
-                </div>
-                <div class="col-md-3 text-center days Dnone " id="day3">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-investigacion">
-                            <img class="w-100 height-image" src="../hawa/images/day2.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">3 DÍAS</p>
-                </div>
-                <div class="col-md-3 text-center days Dnone" id="day4">
-                    <a class="de-bo">
-                        <div class="image-wrapper img-naturaleza">
-                            <img class="w-100 height-image" src="../hawa/images/day4.jpg" alt="">
-                        </div>
-                    </a>
-                    <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">OTRO</p>
-                </div>
+        <div class="col-md-3 text-center vivencial Dnone todos1" id="o2">
+          <a class="de-bo">
+            <div class="image-wrapper img-naturaleza ">
+              <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
             </div>
-        </div>
-    </section>
-
-    <section class="space-tb  Dnone" id="contmapa">
-
-        <div id="mapa" id="mapa"></div>
-        <div id=" col-md-6 ">
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">GASTRONOMÍA</p>
         </div>
 
-        <button id="opc1">LIMA</button>
-        <button id="opc2">LIMA</button>
-        <button id="opc3">CUSCO</button> </div>
-    </section>
+        <div class="col-md-3 text-center vivencial Dnone todos1" id="o3">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">PESCA</p>
+        </div>
+
+        <div class="col-md-3 text-center vivencial Dnone todos1" id="o4">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">CAFE</p>
+        </div>
+
+        <div class="col-md-3 text-center vivencial Dnone todos1" id="o5">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">AGRICULTURA</p>
+        </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="mapa.js"></script>
+
+
+        <div class="col-md-3 text-center mistico Dnone sanpedro " id="o6">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">PAGO A LA TIERRA</p>
+        </div>
+
+        <div class="col-md-3 text-center mistico Dnone sanpedro" id="o7">
+          <a class="de-bo">
+            <div class="image-wrapper img-naturaleza ">
+              <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">CHAKU</p>
+        </div>
+
+        <div class="col-md-3 text-center mistico Dnone sanpedro" id="o8">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">TINKACHI</p>
+        </div>
+
+        <div class="col-md-3 text-center mistico Dnone sanpedro" id="o9">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">FESTIVIDADES </p>
+        </div>
+
+        <div class="col-md-3 text-center mistico Dnone sanpedro" id="o10">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">DEMOSTRACION DE RITUALES</p>
+        </div>
+
+
+
+
+        <div class="col-md-3 text-center investigacion Dnone todos1" id="o11">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion todos1">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">HISTORIA</p>
+        </div>
+
+        <div class="col-md-3 text-center investigacion Dnone todos1" id="o12">
+          <a class="de-bo">
+            <div class="image-wrapper img-naturaleza ">
+              <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">ARQUITECTURA</p>
+        </div>
+
+        <div class="col-md-3 text-center investigacion Dnone todos1" id="o13">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">INGENIERIA</p>
+        </div>
+
+        <div class="col-md-3 text-center investigacion Dnone todos1" id="o14">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">ARTE </p>
+        </div>
+
+        <div class="col-md-3 text-center investigacion Dnone todos1" id="o15">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">RELIGION</p>
+        </div>
+
+
+
+
+        <div class="col-md-3 text-center naturaleza Dnone todos1" id="o16">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">BIRD WATCHING</p>
+        </div>
+
+        <div class="col-md-3 text-center naturaleza Dnone todos1" id="o17">
+          <a class="de-bo">
+            <div class="image-wrapper img-naturaleza ">
+              <img class="w-100 height-image" src="../hawa/images/o4.jpeg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">AVISTAMIENTO DE FLORA Y FAUNA</p>
+        </div>
+
+        <div class="col-md-3 text-center naturaleza Dnone todos1" id="o18">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion ">
+              <img class="w-100 height-image" src="../hawa/images/o3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2">TREKKING</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="Dnone" id="threeDiv">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="fuente-solano1 bold">¿CUÁNTOS DÍAS TE GUSTARÍA QUEDARTE EN EL LUGAR?</h4>
+          <div class="height--25"></div>
+        </div>
+        <div class="col-md-3 text-center days Dnone ayahuasca" id="day1">
+          <a class="de-bo">
+            <div class="image-wrapper img-mistico ">
+              <img class="w-100 height-image" src="../hawa/images/day1.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">1 DÍA</p>
+        </div>
+        <div class="col-md-3 text-center days Dnone ayahuasca" id="day2">
+          <a class="de-bo">
+            <div class="image-wrapper img-mistico">
+              <img class="w-100 height-image" src="../hawa/images/day3.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">2 DÍAS</p>
+        </div>
+        <div class="col-md-3 text-center days Dnone " id="day3">
+          <a class="de-bo">
+            <div class="image-wrapper img-investigacion">
+              <img class="w-100 height-image" src="../hawa/images/day2.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">3 DÍAS</p>
+        </div>
+        <div class="col-md-3 text-center days Dnone" id="day4">
+          <a class="de-bo">
+            <div class="image-wrapper img-naturaleza">
+              <img class="w-100 height-image" src="../hawa/images/day4.jpg" alt="">
+            </div>
+          </a>
+          <p class="pt-3 text-grey-bold bold linea-space linea-space2 size-45">OTRO</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="space-tb  Dnone" id="contmapa">
+
+    <div id="mapa" id="mapa"></div>
+    <div id=" col-md-6 ">
+    </div>
+
+    <button id="opc1">LIMA</button>
+    <button id="opc2">LIMA</button>
+    <button id="opc3">CUSCO</button> </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="mapa.js"></script>
 </body>
 
 </html>
