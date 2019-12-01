@@ -249,4 +249,18 @@ nav {
     .goodbye-messages {
       left: 10%;
     }
+
+    .btn-pago {
+      color: #d64b14;
+      padding: 10px 15px;
+      border: 1px solid #d64b14;
+      border-radius: 6px;
+    }
+
+    .btn-pago:hover {
+      color: white;
+      padding: 10px 15px;
+      border: 1px solid white;
+      border-radius: 6px;
+    }
 }
