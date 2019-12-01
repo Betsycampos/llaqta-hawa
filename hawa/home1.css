@@ -150,6 +150,23 @@ nav {
     display: flex;
 }
 
+.contenedor-form {
+  background-color: white;
+}
+
+.contenedor-bg-form {
+  background-color: #ececec;
+}
+
+.col-pago {
+  box-shadow: 2px 2px 10px #666;
+}
+
+.btn-form {
+  padding: 10px 100px;
+  background-color: #f17442;
+}
+
 @media (min-width:768px) {
     .bg-llaqta {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/hawa/images/desktop.jpg');
