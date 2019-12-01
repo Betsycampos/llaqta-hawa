@@ -1,147 +1,168 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Muli|Open+Sans&display=swap');
-*{z-index: 1;
-  font-family: 'Muli', sans-serif; }
+* {
+    z-index: 1;
+    font-family: 'Muli', sans-serif;
+}
+
 .fuente-solano {
-  font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive;
 }
+
 .fuente-solano1 {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
- 
 
-
-nav{
-  z-index: 2;
+nav {
+    z-index: 2;
 }
+
 .space-tb {
-  padding-top: 40px;
-  padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-
 
 .bg-llaqta {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/hawa/images/desktop.jpg');
-  width: 100%;
-  min-height: 850px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  }
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/hawa/images/desktop.jpg');
+    width: 100%;
+    min-height: 850px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
-  .position-nav {
+.position-nav {
     position: fixed;
     width: 100%;
     background: rgba(0, 0, 0, 0.705) !important;
     height: 15%;
-  }
+}
 
-  .height--25 {
+.height--25 {
     height: 25px;
-  }
+}
 
-  .height--100 {
+.height--100 {
     height: 100px;
-  }
+}
 
-  .linea-space {
+.linea-space {
     line-height: 1 !important;
-  }
+}
 
-  .size-25 {
+.size-25 {
     font-size: 25px !important;
-  }
+}
 
-  .size-45 {
+.size-45 {
     font-size: 45px !important;
-  }
+}
 
-  .bold {
+.bold {
     font-weight: 700;
-  }
+}
 
-  .btn-empezar {
+.btn-empezar {
     padding: 13px 15px;
     background: #d64b14;
-    
     color: black;
     border-radius: 6px;
-  }
+}
 
-  .btn-empezar:hover {
+.btn-empezar:hover {
     background: white;
     color: black;
-  }
+}
 
-  .text-grey-bold {
+.text-grey-bold {
     color: #333;
-  }
+}
 
-  .image-wrapper {
+.image-wrapper {
     margin: 0 auto;
     width: 100%;
     overflow: hidden;
     font-size: 0;
     position: relative;
-  }
-  
-  .image-wrapper:hover img {
+}
+
+.image-wrapper:hover img {
     transform: scale(1.2);
-  }
-  
-  .w-100 {
+}
+
+.w-100 {
     width: 100%;
-  }
+}
 
-  .height-image {
+.height-image {
     height: 30vh;
-  }
+}
 
-  .height-image-slider {
+.height-image-slider {
     height: 60vh;
-  }
-  
-  .ll img {
-    background: rgba(17, 17, 17, 0.705);
-  }
+}
 
-  .img-vivencial {
+.ll img {
+    background: rgba(17, 17, 17, 0.705);
+}
+
+.img-vivencial {
     background: url('/hawa/images/a.jpg');
-  }
-  
-  .color-menu {
+}
+
+.color-menu {
     color: white;
     font-size: 2rem;
-  }
+}
 
- .linea-space2 {
+.linea-space2 {
     position: relative;
     top: -50%;
     color: white
-  }
+}
 
-  .de-bo {
-    text-decoration:none !important;
-  }
+.de-bo {
+    text-decoration: none !important;
+}
 
-@media (min-width:768px){
+#mapa {
+    height: 600px;
+    width: 43em;
+    /* position: !important; */
+}
 
-  .bg-llaqta {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/hawa/images/desktop.jpg');
-    min-height: 700px;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+.imageMap {
+    height: 50px;
+}
 
-  .img-vivencial {
-    background: url('/hawa/images/a.jpg');
-  }
+.leaflet-control-attribution {
+    display: none;
+}
 
-  .linea-space2 {
-    
-    top: -30%;
-    
-  }
+.Dnone {
+    display: none;
+}
 
+.Dblock {
+    display: block;
+}
+
+.Dflex {
+    display: flex;
+}
+
+@media (min-width:768px) {
+    .bg-llaqta {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/hawa/images/desktop.jpg');
+        min-height: 700px;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .img-vivencial {
+        background: url('/hawa/images/a.jpg');
+    }
+    .linea-space2 {
+        top: -30%;
+    }
 }
