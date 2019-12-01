@@ -22,7 +22,7 @@ nav {
 }
 
 .bg-llaqta {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/hawa/images/desktop.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../hawa/images/desktop.jpg');
     width: 100%;
     min-height: 850px;
     background-size: cover;
@@ -106,7 +106,7 @@ nav {
 }
 
 .img-vivencial {
-    background: url('/hawa/images/a.jpg');
+    background: url('../hawa/images/a.jpg');
 }
 
 .color-menu {
@@ -180,7 +180,7 @@ nav {
 
 @media (min-width:768px) {
     .bg-llaqta {
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('/hawa/images/desktop.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('../hawa/images/desktop.jpg');
         min-height: 700px;
         height: 100vh;
         background-size: cover;
@@ -188,7 +188,7 @@ nav {
         background-position: center center;
     }
     .img-vivencial {
-        background: url('/hawa/images/a.jpg');
+        background: url('../hawa/images/a.jpg');
     }
     .linea-space2 {
         top: -30%;
