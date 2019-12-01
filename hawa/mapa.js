@@ -226,7 +226,14 @@ day3.addEventListener("click", () => {
     console.log(datafilter2);
 
     for (const longitudYlatitud of datafilter2) {
-
+        const divMap = document.getElementById("texto");
+        const name = `<div id="texto1">
+        <h1> ${longitudYlatitud.titulo}</h1>
+        <p> ${longitudYlatitud.tipo}</p>
+        <span> ${longitudYlatitud.orientado}</span>
+        </div>
+        `;
+        divMap.innerHTML = name;
 
         marker = L.marker([longitudYlatitud.longitud, longitudYlatitud.latitud], {
             icon: iconoTurismo
@@ -234,6 +241,7 @@ day3.addEventListener("click", () => {
         marker.bindPopup(`<h1>${longitudYlatitud.titulo}</h1><img class="imageMap"src='peruvian.png' alt='ecoFeria'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
         var popup = L.popup();
     };
+
 });
 
 

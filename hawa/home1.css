@@ -61,6 +61,19 @@ nav {
     font-weight: 700;
 }
 
+.mapacontainer {
+    display: flex;
+}
+
+#texto1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
 .btn-empezar {
     padding: 13px 15px;
     background: #d64b14;
