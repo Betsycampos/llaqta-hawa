@@ -33,7 +33,7 @@ nav {
 .position-nav {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.705) !important;
+    background: rgba(0, 0, 0, 0.788) !important;
     height: 15%;
 }
 
@@ -151,23 +151,31 @@ nav {
 }
 
 .contenedor-form {
-  background-color: rgba(255, 255, 255, 0.904);
+    background-color: rgba(255, 255, 255, 0.904);
 }
 
 .contenedor-bg-form {
-  background-color: #d3d0d0;
+    background-color: #d3d0d0;
 }
 
 .col-pago {
-  background-color: white;
-  box-shadow: 2px 2px 10px #666;
+    background-color: white;
+    box-shadow: 2px 2px 10px #666;
 }
 
 .btn-form {
-  padding: 10px 10px;
-  background-color: #f17442;
+    padding: 10px 10px;
+    background-color: #f17442;
 }
+
 .goodbye-message {
+    background: rgb(270, 270, 270, 0.6);
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left: 5%;
+}
+.goodbye-messages {
   background: rgb(270, 270, 270, 0.6);
   position: absolute;
   top: 10%;
@@ -175,9 +183,25 @@ nav {
   left: 5%;
 }
 
+.text-nosotros {
+  color: #f17442;
+}
 
+.color-section {
+  background-color: #ebebec !important;  
+}
 
+.btn-pago-home {
+    display: flex;
+    justify-content: center;
+}
 
+.btn-empezar-pago:hover,
+.btn-empezar-pago {
+    padding: 13px 15px;
+    background: #d64b14;
+    border-radius: 6px;
+}
 
 @media (min-width:768px) {
     .bg-llaqta {
@@ -195,22 +219,34 @@ nav {
         top: -30%;
     }
     .btn-form {
-      padding: 10px 100px;
-      background-color: #f17442;
+        padding: 10px 100px;
+        background-color: #f17442;
+    }
+    .goodbye-message {
+        top: 15%;
+        right: 10%;
+        left: 40%;
+    }
+    .goodbye-message {
+        top: 20%;
+        left: 50%;
+    }
+    .goodbye-message {
+        left: 60%;
     }
 
-    .goodbye-message {
+    .goodbye-messages {
       top: 15%;
       right: 10%;
-      left: 40%;
+      left: 30%;
     }
     
-    .goodbye-message {
+    .goodbye-messages {
       top: 20%;
-      left: 50%;
+      left: 30%;
     }
 
-    .goodbye-message {
-      left: 60%;
+    .goodbye-messages {
+      left: 10%;
     }
 }
