@@ -1,0 +1,12 @@
+.mapa {
+    height: 600px;
+    /* position: !important; */
+}
+
+.imageMap {
+    height: 50px;
+}
+
+.leaflet-control-attribution {
+    display: none;
+}
