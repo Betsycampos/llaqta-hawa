@@ -10,11 +10,11 @@ const coordenadast = [{
 }, {
     longitud: -12.125260,
     latitud: -76.994037,
-    titulo: "Experiencia de naturaleza",
-    parrafo: "disfruta 2 dias",
-    tipo: "naturaleza",
-    orientado: "trekking",
-    dia: "2-dias",
+    titulo: "Experiencia sobre pago a la tierra",
+    parrafo: "disfruta 1 dia",
+    tipo: "mistico",
+    orientado: "pago-a-la-tierra",
+    dia: "1-dia",
 }, {
     longitud: -12.129759,
     latitud: -76.994037,
@@ -33,15 +33,6 @@ const coordenadast = [{
     tipo: "naturaleza",
     orientado: "trekking",
     dia: "otro",
-}, {
-    longitud: -12.129759,
-    latitud: -76.994037,
-    titulo: "Experiencia de naturaleza",
-    parrafo: "disfruta una semana",
-    departamento: "madre dios ",
-    tipo: "vivencial",
-    orientado: "cafe",
-    dia: "1-dia",
 }];
 
 
@@ -86,6 +77,11 @@ op4.addEventListener("click", () => {
     arrayOfOptions.push('naturaleza');
     console.log(arrayOfOptions)
 
+})
+
+op2.addEventListener("click", () => {
+    arrayOfOptions.push('mistico');
+    console.log(arrayOfOptions)
 })
 const twoDiv = document.getElementById('twoDiv');
 const threeDiv = document.getElementById('threeDiv');
@@ -206,6 +202,8 @@ const florafauna = document.getElementById("o17");
 const trek = document.getElementById("o18");
 
 
+const pagoalatierra = document.getElementById("o6");
+
 
 
 
@@ -238,7 +236,45 @@ day3.addEventListener("click", () => {
         marker = L.marker([longitudYlatitud.longitud, longitudYlatitud.latitud], {
             icon: iconoTurismo
         }).addTo(miMapa);
-        marker.bindPopup(`<h1>${longitudYlatitud.titulo}</h1><img class="imageMap"src='peruvian.png' alt='ecoFeria'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
+        marker.bindPopup(`<p>${longitudYlatitud.titulo}</p><img class="imageMap"src='peruvian.png' alt='ecoFeria'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
+        var popup = L.popup();
+    };
+
+});
+
+
+
+
+day1.addEventListener("click", () => {
+    arrayOfOptions.push('1-dia');
+    console.log(arrayOfOptions);
+
+
+
+    miMapa.removeLayer(marker);
+
+    const datafilter = coordenadast.filter(menosdata => menosdata.tipo == arrayOfOptions[0]);
+
+    const datafilter1 = coordenadast.filter(menosdata => menosdata.orientado == arrayOfOptions[1]);
+
+    const datafilter2 = coordenadast.filter(menosdata => menosdata.dia == arrayOfOptions[2]);
+    console.log(datafilter2);
+
+    for (const longitudYlatitud of datafilter2) {
+        const divMap = document.getElementById("texto");
+        const
+            name = `<div id="texto1">
+        <h1> ${longitudYlatitud.titulo}</h1>
+        <p> ${longitudYlatitud.tipo}</p>
+        <span> ${longitudYlatitud.orientado}</span>
+        </div>
+        `;
+        divMap.innerHTML = name;
+
+        marker = L.marker([longitudYlatitud.longitud, longitudYlatitud.latitud], {
+            icon: iconoTurismo
+        }).addTo(miMapa);
+        marker.bindPopup(`<p>${longitudYlatitud.titulo}</p><img class="imageMap"src='peruvian.png' alt='ecoFeria'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
         var popup = L.popup();
     };
 
@@ -250,6 +286,11 @@ trek.addEventListener("click", () => {
     console.log(arrayOfOptions)
 })
 
+
+pagoalatierra.addEventListener("click", () => {
+    arrayOfOptions.push('pago-a-la-tierra');
+    console.log(arrayOfOptions)
+})
 
 const todos1_2 = document.querySelectorAll(".sanpedro");
 
