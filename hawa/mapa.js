@@ -121,7 +121,86 @@ const o4 = document.getElementById('o4');
 
 op1.addEventListener("click", () => {
     twoDiv.classList.remove("Dnone");
-    // twoDiv.classList.toggle("dBlock");
+    const algo = document.querySelectorAll(".vivencial");
+    algo.forEach(function(userItem) {
+        userItem.classList.remove("Dnone");
+    });
+    const algo2 = document.querySelectorAll(".mistico");
+    algo2.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+    const algo3 = document.querySelectorAll(".investigacion");
+    algo3.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+    const algo4 = document.querySelectorAll(".naturaleza");
+    algo4.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+});
+
+op2.addEventListener("click", () => {
+    twoDiv.classList.remove("Dnone");
+    const algo2 = document.querySelectorAll(".vivencial");
+    algo2.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+    const algo = document.querySelectorAll(".mistico");
+    algo.forEach(function(userItem) {
+        userItem.classList.remove("Dnone");
+    });
+    const algo3 = document.querySelectorAll(".investigacion");
+    algo3.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+    const algo4 = document.querySelectorAll(".naturaleza");
+    algo4.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+});
 
 
+op3.addEventListener("click", () => {
+    twoDiv.classList.remove("Dnone");
+    const algo2 = document.querySelectorAll(".vivencial");
+    algo2.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+    const algo = document.querySelectorAll(".mistico");
+    algo.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+
+    const algo3 = document.querySelectorAll(".investigacion");
+    algo3.forEach(function(userItem) {
+        userItem.classList.remove("Dnone");
+    });
+
+    const algo4 = document.querySelectorAll(".naturaleza");
+    algo4.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+});
+
+
+op4.addEventListener("click", () => {
+    twoDiv.classList.remove("Dnone");
+    const algo2 = document.querySelectorAll(".vivencial");
+    algo2.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+    const algo = document.querySelectorAll(".mistico");
+    algo.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+
+    const algo3 = document.querySelectorAll(".investigacion");
+    algo3.forEach(function(userItem) {
+        userItem.classList.add("Dnone");
+    });
+
+    const algo4 = document.querySelectorAll(".naturaleza");
+    algo4.forEach(function(userItem) {
+        userItem.classList.remove("Dnone");
+    });
 });
