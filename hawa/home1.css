@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Muli|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Muli|Open+Sans&display=swap');
 * {
     z-index: 1;
     font-family: 'Muli', sans-serif;
 }
 
 .fuente-solano {
-    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fuente-solano1 {
@@ -188,20 +188,21 @@ nav {
     right: 5%;
     left: 5%;
 }
+
 .goodbye-messages {
-  background: rgb(270, 270, 270, 0.6);
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  left: 5%;
+    background: rgb(270, 270, 270, 0.6);
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left: 5%;
 }
 
 .text-nosotros {
-  color: #f17442;
+    color: #f17442;
 }
 
 .color-section {
-  background-color: #ebebec !important;  
+    background-color: #ebebec !important;
 }
 
 .btn-pago-home {
@@ -214,6 +215,7 @@ nav {
     padding: 13px 15px;
     background: #d64b14;
     border-radius: 6px;
+    text-decoration: none;
 }
 
 @media (min-width:768px) {
@@ -247,33 +249,29 @@ nav {
     .goodbye-message {
         left: 60%;
     }
-
     .goodbye-messages {
-      top: 15%;
-      right: 10%;
-      left: 30%;
+        top: 15%;
+        right: 10%;
+        left: 30%;
     }
-    
     .goodbye-messages {
-      top: 20%;
-      left: 30%;
+        top: 20%;
+        left: 30%;
     }
-
     .goodbye-messages {
-      left: 10%;
+        left: 10%;
     }
-
     .btn-pago {
-      color: #d64b14;
-      padding: 10px 15px;
-      border: 1px solid #d64b14;
-      border-radius: 6px;
+        background: #d64b14;
+        color: #d3d0d0;
+        padding: 10px 15px;
+        border: 1px solid #d64b14;
+        border-radius: 6px;
     }
-
-    .btn-pago:hover {
-      color: white;
-      padding: 10px 15px;
-      border: 1px solid white;
-      border-radius: 6px;
+    .btn-pago:hover,
+    .btn-pago:active {
+        transform: scale(1.5);
+        color: #d3d0d0 !important;
+        text-decoration: none;
     }
 }
