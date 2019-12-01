@@ -33,7 +33,7 @@ nav {
 .position-nav {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.705) !important;
+    background: rgba(0, 0, 0, 0.788) !important;
     height: 15%;
 }
 
@@ -188,6 +188,21 @@ nav {
     right: 5%;
     left: 5%;
 }
+.goodbye-messages {
+  background: rgb(270, 270, 270, 0.6);
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  left: 5%;
+}
+
+.text-nosotros {
+  color: #f17442;
+}
+
+.color-section {
+  background-color: #ebebec !important;  
+}
 
 .btn-pago-home {
     display: flex;
@@ -231,5 +246,34 @@ nav {
     }
     .goodbye-message {
         left: 60%;
+    }
+
+    .goodbye-messages {
+      top: 15%;
+      right: 10%;
+      left: 30%;
+    }
+    
+    .goodbye-messages {
+      top: 20%;
+      left: 30%;
+    }
+
+    .goodbye-messages {
+      left: 10%;
+    }
+
+    .btn-pago {
+      color: #d64b14;
+      padding: 10px 15px;
+      border: 1px solid #d64b14;
+      border-radius: 6px;
+    }
+
+    .btn-pago:hover {
+      color: white;
+      padding: 10px 15px;
+      border: 1px solid white;
+      border-radius: 6px;
     }
 }
