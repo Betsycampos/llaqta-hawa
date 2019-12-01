@@ -67,14 +67,6 @@ var iconoTurismo = new iconoBase({
 
 
 
-for (const longitudYlatitud of coordenadast) {
-    var marker = L.marker([longitudYlatitud.longitud, longitudYlatitud.latitud], {
-        icon: iconoTurismo
-    }).addTo(miMapa);
-    marker.bindPopup(`<h1>${longitudYlatitud.titulo}</h1><img class="imageMap"src='eco.jpg' alt='Turismo'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
-    var popup = L.popup();
-}
-
 const arrayOfOptions = [];
 
 const opc1 = document.getElementById("opc1");
@@ -215,26 +207,41 @@ const trek = document.getElementById("o18");
 
 
 
-const datafilter = coordenadast.filter(menosdata => menosdata.tipo == arrayOfOptions[0]);
 
-const datafilter1 = coordenadast.filter(menosdata => menosdata.orientado == arrayOfOptions[1]);
-
-const datafilter2 = coordenadast.filter(menosdata => menosdata.dia == arrayOfOptions[2]);
 
 
 day3.addEventListener("click", () => {
     arrayOfOptions.push('3-dias');
     console.log(arrayOfOptions);
 
+
+
     miMapa.removeLayer(marker);
+
+    const datafilter = coordenadast.filter(menosdata => menosdata.tipo == arrayOfOptions[0]);
+
+    const datafilter1 = coordenadast.filter(menosdata => menosdata.orientado == arrayOfOptions[1]);
+
+    const datafilter2 = coordenadast.filter(menosdata => menosdata.dia == arrayOfOptions[2]);
+    console.log(datafilter2);
+
     for (const longitudYlatitud of datafilter2) {
+        const divMap = document.getElementById("texto");
+        const name = `<div id="texto1">
+        <h1> ${longitudYlatitud.titulo}</h1>
+        <p> ${longitudYlatitud.tipo}</p>
+        <span> ${longitudYlatitud.orientado}</span>
+        </div>
+        `;
+        divMap.innerHTML = name;
 
         marker = L.marker([longitudYlatitud.longitud, longitudYlatitud.latitud], {
-            icon: iconoReciclaje
+            icon: iconoTurismo
         }).addTo(miMapa);
         marker.bindPopup(`<h1>${longitudYlatitud.titulo}</h1><img class="imageMap"src='peruvian.png' alt='ecoFeria'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
         var popup = L.popup();
     };
+
 });
 
 
@@ -288,7 +295,7 @@ threeDiv.addEventListener("click", () => {
 
 //naturaleza trekking 3-dias
 //tipo-orientado-dia
-
+/* 
 
 
 opc2.addEventListener("click", () => {
@@ -314,4 +321,4 @@ opc3.addEventListener("click", () => {
         marker.bindPopup(`<h1>${longitudYlatitud.titulo}</h1><img class="imageMap"src='peruvian.png' alt='ecoFeria'><p>${longitudYlatitud.parrafo}</p>`, estiloPopup).openPopup();
         var popup = L.popup();
     }
-});
+}); */
