@@ -33,7 +33,7 @@ nav {
 .position-nav {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.705) !important;
+    background: rgba(0, 0, 0, 0.788) !important;
     height: 15%;
 }
 
@@ -184,6 +184,10 @@ nav {
 
 .text-nosotros {
   color: #f17442;
+}
+
+.color-section {
+  background-color: #ebebec !important;  
 }
 
 
