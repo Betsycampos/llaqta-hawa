@@ -204,3 +204,40 @@ op4.addEventListener("click", () => {
         userItem.classList.remove("Dnone");
     });
 });
+
+const todos1_2 = document.querySelectorAll(".sanpedro");
+
+const todos1 = document.querySelectorAll(".todos1");
+const days = document.querySelectorAll(".days");
+const daya = document.querySelectorAll(".ayahuasca");
+
+for (const todos of todos1) {
+    todos.addEventListener("click", () => {
+        threeDiv.classList.remove("Dnone");
+
+        days.forEach(function(userItem) {
+            userItem.classList.remove("Dnone");
+        });
+
+    });
+}
+
+
+for (const todoss of todos1_2) {
+    todoss.addEventListener("click", () => {
+        threeDiv.classList.remove("Dnone");
+
+        days.forEach(function(userItem) {
+            userItem.classList.add("Dnone");
+        });
+        daya.forEach(function(userItem) {
+            userItem.classList.remove("Dnone");
+        });
+    });
+}
+
+const mapacont = document.getElementById("contmapa")
+
+threeDiv.addEventListener("click", () => {
+    mapacont.classList.remove("Dnone");
+})
